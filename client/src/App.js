@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LandingPageView from "./pages/LandingPageView";
 import DashboardLayout from "./components/Layout/DashboardLayout";
 import OverviewPage from "./pages/OverviewPage";
-import IntegrityPage from "./pages/IntegrityPage";
+import DataManagementPage from "./pages/DataManagementPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import InactiveSellersPage from "./pages/InactiveSellersPage";
 import AdminPage from "./pages/AdminPage";
@@ -33,7 +33,7 @@ function App() {
         <Route path="/" element={<LandingPageView />} />
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<OverviewPage />} />
-          <Route path="integrity" element={<IntegrityPage />} />
+          <Route path="data-management" element={<DataManagementPage />} />
          
           <Route path="analytics" element={<AnalyticsPage />} />
           <Route path="analytics/core-transactional" element={<CoreTransactionalPage />} />

@@ -1,0 +1,6 @@
+inventory_id,product_id,warehouse_id,stock_remaining,restock_date,min_stock_level
+760,51,1,150,2025-02-15,50
+761,52,1,80,2025-02-20,30
+762,53,2,200,2025-03-01,100
+763,54,3,120,2025-02-25,40
+764,55,4,90,2025-03-05,35

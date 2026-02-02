@@ -1,0 +1,4 @@
+return_id,order_item_id,return_reason,return_status,return_date,refund_amount,refund_method
+3270,23926,Wrong color received,Approved,2025-02-08,1200,bKash
+3271,23927,Product not as described,Pending,2025-02-09,2500,Credit Card
+3272,23929,Defective product,Approved,2025-02-10,850,Cash

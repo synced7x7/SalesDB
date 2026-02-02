@@ -1,0 +1,6 @@
+order_id,order_date,customer_id,order_status,total_amount
+11917,2025-02-01T14:30:00,51,Processing,3700
+11918,2025-02-01T15:45:00,52,Confirmed,2500
+11919,2025-02-02T10:20:00,53,Delivered,850
+11920,2025-02-02T16:00:00,54,Shipped,1500
+11921,2025-02-03T09:15:00,55,Processing,1800

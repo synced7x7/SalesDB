@@ -15,7 +15,7 @@ export default function DashboardLayout() {
 
     const navItems = [
         { path: '/dashboard', icon: Home, label: 'Overview', end: true },
-        { path: '/dashboard/integrity', icon: CheckCircle, label: 'Data Integrity' },
+        { path: '/dashboard/data-management', icon: CheckCircle, label: 'Data Management' },
         { path: '/dashboard/analytics', icon: TrendingUp, label: 'Analytics' },
         { path: '/dashboard/admin', icon: Settings, label: 'Admin Tools' },
         { path: '/dashboard/tester', icon: AlertTriangle, label: 'Tester' },

@@ -1,0 +1,6 @@
+product_id,product_name,description,price,cogs,category_id,seller_id
+51,Smart LED Bulb,WiFi enabled color changing bulb,1200,800,51,51
+52,Wireless Gaming Mouse,RGB gaming mouse with 6 buttons,2500,1500,52,51
+53,Organic Honey 500g,Pure natural honey from Sundarbans,850,500,53,53
+54,Baby Diaper Pack,Soft cotton diapers pack of 50,1500,900,54,53
+55,Yoga Mat Premium,Non-slip exercise mat 6mm thick,1800,1000,55,54

@@ -1,0 +1,6 @@
+payment_id,order_id,payment_date,payment_method,payment_status,amount
+11897,11917,2025-02-01T14:35:00,bKash,Completed,3700
+11898,11918,2025-02-01T15:50:00,Credit Card,Completed,2500
+11899,11919,2025-02-02T10:25:00,Cash on Delivery,Pending,850
+11900,11920,2025-02-02T16:05:00,Nagad,Completed,1500
+11901,11921,2025-02-03T09:20:00,bKash,Completed,1800
