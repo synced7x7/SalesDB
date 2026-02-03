@@ -4,6 +4,8 @@ import { Database, Upload, Plus, FileText, CheckCircle, AlertCircle } from 'luci
 import { useDropzone } from 'react-dropzone';
 import Papa from 'papaparse';
 
+// Data Management Page Component
+
 export default function DataManagementPage() {
     const [tables, setTables] = useState([]);
     const [selectedTable, setSelectedTable] = useState('');
