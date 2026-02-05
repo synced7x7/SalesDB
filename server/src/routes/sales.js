@@ -11,6 +11,7 @@ const profitMarginController = require('../controllers/profitMarginController');
 const yoyRevenueController = require('../controllers/yoyRevenueController');
 const fraudRiskController = require('../controllers/fraudRiskController');
 const revenueDropAnalysisController = require('../controllers/revenueDropAnalysisController');
+const inventoryController = require('../controllers/inventoryController');
 
 // -- Total Sales Per Date (Daily Sales) --
 router.get('/daily-sales', async (req, res) => {
@@ -97,5 +98,12 @@ router.get('/fraud/seller-returns-alltime', fraudRiskController.getSellerHighRet
 router.get('/revenue-drop/monthly', revenueDropAnalysisController.getMonthlyRevenueDropAnalysis);
 router.get('/revenue-drop/yearly', revenueDropAnalysisController.getYearlyRevenueDropAnalysis);
 router.get('/revenue-drop/weekly', revenueDropAnalysisController.getWeeklyRevenueDropAnalysis);
+
+// -- Inventory Integlligence --
+router.get('/inventory/low-stock', inventoryController.getLowStockProducts);
+router.get('/inventory/fast-moving', inventoryController.getFastMovingProducts);
+router.get('/inventory/high-returns', inventoryController.getHighReturnProducts);
+router.get('/inventory/warehouse-load', inventoryController.getWarehouseLoadIntelligence);
+router.get('/inventory/intelligence-score', inventoryController.getInventoryIntelligenceScore);
 
 module.exports = router;
