@@ -31,24 +31,55 @@
 
 /* Year Selection */
 .year-selection {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  background: transparent;
+  padding: 16px 20px;
+  transition: all 0.3s ease;
+}
+
+.year-selection:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .year-label {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  letter-spacing: 0.3px;
 }
 
 .year-select {
-  padding: 8px 15px;
+  padding: 10px 16px;
   font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
   cursor: pointer;
   background-color: white;
+  color: #374151;
+  transition: all 0.2s ease;
+  outline: none;
+  min-width: 150px;
+}
+
+.year-select:hover {
+  border-color: #667eea;
+  background-color: #f9fafb;
+}
+
+.year-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background-color: white;
+}
+
+.year-select option {
+  padding: 10px;
+  font-size: 14px;
 }
 
 /* Loading & Empty States */
