@@ -189,7 +189,7 @@ export default function RevenueDecreaseRatioDashboard() {
 
   return (
     <div className="dashboard-container">
-      <h2 className="dashboard-heading">Revenue Decrease Ratio (Year-over-Year)</h2>
+      <h2 className="dashboard-heading">Revenue Change Ratio (Year-over-Year)</h2>
 
       <h3 className="performance-heading">
         Historical Revenue Change Analysis

@@ -1,15 +1,13 @@
 import React from "react";
 import { useNavigate, Outlet, useLocation } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import {  ShieldAlert, TrendingDown, Zap } from "lucide-react";
 import {
   TrendingUp,
-  ShoppingCart,
   DollarSign,
   Users,
   Package,
   BarChart3,
   AlertCircle,
-  Settings,
 } from "lucide-react";
 import "../components/styles/AnalyticsPages.css";
 
@@ -47,6 +45,33 @@ export default function AnalyticsPage() {
       badge: "1 Dashboard",
     },
     {
+      icon: DollarSign,
+      title: "Profit & Financial Intelligence",
+      description: "True business profitability beyond revenue",
+      color: "#ec4899",
+      gradient: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)",
+      path: "/dashboard/analytics/profit-financial",
+      badge: "4 Dashboards",
+    },
+    {
+      icon: Package,
+      title: "Inventory Intelligence",
+      description: "Stock health and supply risk",
+      color: "#8b5cf6",
+      gradient: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
+      path: "/dashboard/analytics/inventory",
+      badge: "5 Dashboards",
+    },
+    {
+      icon: TrendingDown,
+      title: "Revenue Drop Analysis",
+      description: "Track and analyze revenue decline patterns across time periods",
+      color: "#ea580c",
+      gradient: "linear-gradient(135deg, #ea580c 0%, #c2410c 100%)",
+      path: "/dashboard/analytics/revenue-drop",
+      badge: "3 Dashboards",
+    },
+    {
       icon: AlertCircle,
       title: "Returns, Risk & Quality Control",
       description: "Loss prevention and risk monitoring",
@@ -56,40 +81,22 @@ export default function AnalyticsPage() {
       badge: "1 Dashboard",
     },
     {
-      icon: Package,
-      title: "Inventory Intelligence",
-      description: "Stock health and supply risk",
-      color: "#8b5cf6",
-      gradient: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
-      path: "/inventory",
-      badge: "Coming Soon",
+      icon: ShieldAlert, 
+      title: "Fraud Pattern Detection",
+      description: "Anomaly detection, suspicious activity monitoring and risk scoring",
+      color: "#dc2626",
+      gradient: "linear-gradient(135deg, #dc2626 0%, #991b1b 100%)",
+      path: "/dashboard/analytics/fraud-detection",
+      badge: "5 Dashboards", 
     },
     {
-      icon: DollarSign,
-      title: "Profit & Financial Intelligence",
-      description: "True business profitability beyond revenue",
-      color: "#ec4899",
-      gradient: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)",
-      path: "/profit-financial",
-      badge: "Coming Soon",
-    },
-    {
-      icon: Settings,
-      title: "Automation & Data Integrity",
-      description: "Backend intelligence and automation",
-      color: "#06b6d4",
-      gradient: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
-      path: "/automation",
-      badge: "Coming Soon",
-    },
-    {
-      icon: ShoppingCart,
-      title: "Advanced Intelligence",
-      description: "High-impact, deep-level analytics",
-      color: "#f97316",
-      gradient: "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
-      path: "/advanced",
-      badge: "Coming Soon",
+      icon: Zap, 
+      title: "AI-Powered Analytics",
+      description: "Machine learning insights, predictive analytics and intelligent recommendations",
+      color: "#7c3aed",
+      gradient: "linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%)",
+      path: "/dashboard/analytics/ai-powered",
+      badge: "Coming Soon", 
     },
   ];
 
@@ -107,13 +114,13 @@ export default function AnalyticsPage() {
         </div>
         <div className="analytics-stats">
           <div className="stat-item">
-            <span className="stat-value">10</span>
+            <span className="stat-value">29</span>
             <span className="stat-label">Active Dashboards</span>
           </div>
           <div className="stat-divider"></div>
           <div className="stat-item">
-            <span className="stat-value">8</span>
-            <span className="stat-label">Categories</span>
+            <span className="stat-value">1</span>
+            <span className="stat-label">Coming Soon</span>
           </div>
         </div>
       </div>
@@ -141,9 +148,8 @@ export default function AnalyticsPage() {
                   <div className="category-header">
                     <h3 className="category-title">{category.title}</h3>
                     <span
-                      className={`category-badge ${
-                        isComingSoon ? "badge-coming-soon" : "badge-active"
-                      }`}
+                      className={`category-badge ${isComingSoon ? "badge-coming-soon" : "badge-active"
+                        }`}
                     >
                       {category.badge}
                     </span>

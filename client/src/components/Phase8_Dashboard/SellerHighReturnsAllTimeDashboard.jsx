@@ -9,12 +9,7 @@ import {
     ResponsiveContainer,
     PieChart,
     Pie,
-    Cell,
-    RadarChart,
-    Radar,
-    PolarGrid,
-    PolarAngleAxis,
-    PolarRadiusAxis,
+    Cell
 } from "recharts";
 import "../styles/DashboardStyles.css";
 
@@ -26,7 +21,6 @@ export default function SellerHighReturnsAllTimeDashboard() {
         min_return_rate: 0.30
     });
 
-    const RISK_COLORS = ['#ef4444', '#f59e0b', '#fbbf24', '#10b981'];
 
     // Fetch seller high returns all time data
     const fetchSellerHighReturnsAllTime = async () => {
@@ -136,7 +130,6 @@ export default function SellerHighReturnsAllTimeDashboard() {
         }));
     };
 
-    const radarData = getRadarData();
 
     return (
         <div className="dashboard-container">
@@ -188,7 +181,7 @@ export default function SellerHighReturnsAllTimeDashboard() {
             </div>
 
             <h3 className="performance-heading">
-                Historical sellers with {filters.min_items}+ items sold and '&gt' {(filters.min_return_rate * 100).toFixed(0)}% lifetime return rate
+                Historical sellers with {filters.min_items}+ items sold and &gt; {(filters.min_return_rate * 100).toFixed(0)}% lifetime return rate
             </h3>
 
             {/* Loading State */}
