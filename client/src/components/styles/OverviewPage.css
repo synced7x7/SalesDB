@@ -210,17 +210,17 @@
   flex: 1;
 }
 
-.stat-value {
+.overview-stat-value {
+  color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 800;
-  color: white !important; /* Force white color */
   line-height: 1;
   display: block;
 }
 
-.stat-label {
+.overview-stat-label {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.9) !important; /* Force white color */
+  color: rgba(255, 255, 255, 0.9);
   margin-top: 4px;
   display: block;
 }

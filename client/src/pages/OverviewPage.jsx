@@ -56,8 +56,8 @@ export default function OverviewPage() {
   ];
 
   const stats = [
-    { value: '10+', label: 'Active Dashboards', icon: PieChart },
-    { value: '50+', label: 'Graphs & Key Matrics', icon: Activity },
+    { value: '29', label: 'Active Dashboards', icon: PieChart },
+    { value: '107', label: 'Graphs', icon: Activity },
     { value: '8', label: 'Analytics Categories', icon: BarChart3 },
     { value: '100%', label: 'Data Accuracy', icon: Zap }
   ];
@@ -151,8 +151,8 @@ export default function OverviewPage() {
                   <Icon size={24} />
                 </div>
                 <div className="stat-content">
-                  <div className="stat-value">{stat.value}</div>
-                  <div className="stat-label">{stat.label}</div>
+                  <div className="overview-stat-value">{stat.value}</div>
+                  <div className="overview-stat-label">{stat.label}</div>
                 </div>
               </div>
             );
