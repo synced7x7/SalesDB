@@ -17,8 +17,8 @@ export default function DashboardLayout() {
         { path: '/dashboard', icon: Home, label: 'Overview', end: true },
         { path: '/dashboard/data-management', icon: CheckCircle, label: 'Data Management' },
         { path: '/dashboard/analytics', icon: TrendingUp, label: 'Analytics' },
-        { path: '/dashboard/admin', icon: Settings, label: 'Admin Tools' },
-        { path: '/dashboard/tester', icon: AlertTriangle, label: 'Tester' },
+       /*  { path: '/dashboard/admin', icon: Settings, label: 'Admin Tools' }, */
+        /* { path: '/dashboard/tester', icon: AlertTriangle, label: 'Tester' }, */
     ];
 
     return (
