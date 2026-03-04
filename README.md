@@ -293,16 +293,6 @@ Full CRUD operations across all 11 entities with table-specific forms, paginatio
 
 ---
 
-## Team
-
-| Name | ID | Contribution |
-|------|----|-------------|
-| **Sohan Nur** | 220041151 | Database design, PL/pgSQL functions, triggers, backend API, frontend integration |
-| **Tasnif Emran Ekanto** | 220041135 | Frontend development, chart components, CRUD UI, CSV import |
-| **Al Mukit Muktafin** | 220041157 | Database views, sample data generation, testing, documentation |
-
----
-
 ## License
 
 This project was developed as a course project for **CSE 4532 — Database Management Systems Lab**.
