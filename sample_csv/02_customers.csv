@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,phone,division,district,address,registration_date
+51,Sarah,Ahmed,sarah.ahmed@email.com,01712345678,Dhaka,Dhaka,45 Gulshan Avenue,2024-01-20
+52,Karim,Rahman,karim.r@email.com,01823456789,Chittagong,Chittagong,78 Agrabad Road,2024-01-22
+53,Fatima,Khan,fatima.k@email.com,01934567890,Sylhet,Sylhet,12 Zindabazar,2024-01-25
+54,Rahim,Hossain,rahim.h@email.com,01645678901,Rajshahi,Rajshahi,34 Station Road,2024-02-01
+55,Nadia,Islam,nadia.i@email.com,01756789012,Khulna,Khulna,56 Royal Road,2024-02-05

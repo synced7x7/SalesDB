@@ -1,0 +1,6 @@
+shipping_id,order_id,shipping_date,estimated_delivery,actual_delivery,delivery_status,tracking_number
+10584,11917,2025-02-02,2025-02-06,2025-02-05,Delivered,TRK10584
+10585,11918,2025-02-02,2025-02-07,,In Transit,TRK10585
+10586,11919,2025-02-03,2025-02-08,2025-02-07,Delivered,TRK10586
+10587,11920,2025-02-03,2025-02-09,,Shipped,TRK10587
+10588,11921,2025-02-04,2025-02-10,,Processing,TRK10588

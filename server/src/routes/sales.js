@@ -3,11 +3,15 @@ const router = express.Router();
 const supabase = require('../config/supabaseClient');
 const salesController = require('../controllers/salesController');
 const revenueDashboardController = require('../controllers/revenueDashboardController');
-const monthlyRevenuePerYearController = require('../controllers/monthlyRevenuePerYearController');
-const MonthlyOrderCountController = require('../controllers/MonthlyOrderCountController');
-const MonthlySalesTrendController = require('../controllers/MonthlySalesTrend');
-const averageOrderValueController = require('../controllers/averageOrderValueController');
-const customerLifetimeValue = require('../controllers/customerLifetimeValue');
+const overviewController = require('../controllers/overviewController');
+const analyticsController = require('../controllers/analyticsController');
+const aovController = require('../controllers/averageOrderValue')
+const cltvController = require('../controllers/cltvController')
+const profitMarginController = require('../controllers/profitMarginController');
+const yoyRevenueController = require('../controllers/yoyRevenueController');
+const fraudRiskController = require('../controllers/fraudRiskController');
+const revenueDropAnalysisController = require('../controllers/revenueDropAnalysisController');
+const inventoryController = require('../controllers/inventoryController');
 
 // -- Total Sales Per Date (Daily Sales) --
 router.get('/daily-sales', async (req, res) => {
@@ -31,6 +35,7 @@ router.get('/daily-sales', async (req, res) => {
   res.json(data);
 });
 
+
 router.get('/daily-sales/years', async (req, res) => {
   const { data, error } = await supabase
     .from('daily_sales_years')
@@ -51,37 +56,54 @@ router.get('/totalrevenue', revenueDashboardController.getTotalRevenue);
 router.get('/revenue-per-seller', revenueDashboardController.getRevenuePerSeller);
 router.get('/revenue-per-category', revenueDashboardController.getRevenuePerCategory);
 
-// -- Monthly Revenue Per Year Dashboard --
-router.get('/monthly-revenue', monthlyRevenuePerYearController.getMonthlyRevenue);
-router.get('/monthly-revenue/years', monthlyRevenuePerYearController.getMonthlyRevenueYears);
-router.get('/monthly-revenue/by-category', monthlyRevenuePerYearController.getMonthlyRevenueByCategory);
-router.get('/monthly-revenue/comparison', monthlyRevenuePerYearController.getMonthlyRevenueComparison);
-router.get('/monthly-revenue/growth', monthlyRevenuePerYearController.getMonthlyRevenueGrowth);
+// -- Overview Dashboard --
+router.get('/overview/summary', overviewController.getOverviewSummary);
 
-// -- Monthly Order Count Dashboard --
-router.get('/monthly-order-count', MonthlyOrderCountController.getMonthlyOrderCount);
-router.get('/monthly-order-count/by-year', MonthlyOrderCountController.getMonthlyOrderCountByYear);
-router.get('/monthly-order-count/by-category', MonthlyOrderCountController.getMonthlyOrderCountByCategory);
-router.get('/monthly-order-count/by-seller', MonthlyOrderCountController.getMonthlyOrderCountBySeller);
-router.get('/monthly-order-count/growth', MonthlyOrderCountController.getMonthlyOrderGrowth);
+// -- Phase 4 & 5 Analytics --
+router.get('/analytics/inactive-sellers', analyticsController.getInactiveSellers);
+router.get('/analytics/returns', analyticsController.getReturnAnalytics);
 
-// -- Monthly Sales Trend Dashboard --
-router.get('/monthly-sales-trend', MonthlySalesTrendController.getMonthlySalesTrend);
-router.get('/monthly-sales-trend/by-category', MonthlySalesTrendController.getMonthlySalesTrendByCategory);
-router.get('/monthly-sales-trend/growth', MonthlySalesTrendController.getMonthlySalesTrendByProduct);
+//-- Monthly Revenue
+router.get('/monthly-revenue', revenueDashboardController.getMonthlyRevenuePerYear);
 
-// -- Average Order Value Dashboard --
-router.get('/average-order-value', averageOrderValueController.getAverageOrderValue);
-router.get('/average-order-value/years', averageOrderValueController.getAverageOrderValueYears);
-router.get('/average-order-value/by-year', averageOrderValueController.getAverageOrderValueByYear);
-router.get('/average-order-value/by-seller', averageOrderValueController.getAverageOrderValueBySeller);
-router.get('/average-order-value/by-category', averageOrderValueController.getAverageOrderValueByCategory);
+// -- Monthly Order Count --
+router.get('/monthly-order-count', revenueDashboardController.getMonthlyOrderCount);
 
-// -- Customer Lifetime Value Dashboard --
-router.get('/customer-lifetime-value', customerLifetimeValue.getCustomerLifetimeValue);
-router.get('/customer-lifetime-value/years', customerLifetimeValue.getCustomerLifetimeValueYears);
-router.get('/customer-lifetime-value/by-year', customerLifetimeValue.getCustomerLifetimeValueByYear);
-router.get('/customer-lifetime-value/by-segment', customerLifetimeValue.getCustomerLifetimeValueBySegment);
-router.get('/customer-lifetime-value/by-location', customerLifetimeValue.getCustomerLifetimeValueByLocation);
+// -- Monthly Sales Trend --
+router.get('/monthly-sales-trend', revenueDashboardController.getMonthlySalesTrend);
+
+//-- Average Order Value
+router.get('/average-order-value', aovController.getAverageOrderValue);
+
+// -- Customer Lifetime Value --
+router.get('/customer-lifetime-value', cltvController.getCustomerLifetimeValue);
+
+// -- Profit Margin Analytics --
+router.get('/profit-margin/product', profitMarginController.getProductProfitMargin);
+router.get('/profit-margin/category', profitMarginController.getCategoryProfitMargin);
+
+
+// -- Year-over-Year Revenue Analysis --
+router.get('/yoy/revenue-decrease-ratio', yoyRevenueController.getRevenueDecreaseRatio);
+router.get('/yoy/revenue-growth', yoyRevenueController.getYoYRevenueGrowth);
+router.get('/yoy/monthly-comparison', yoyRevenueController.getMonthlyYoYComparison);
+
+// -- Fraud & Risk Monitoring --
+router.get('/fraud/failed-payments', fraudRiskController.getMultipleFailedPayments);
+router.get('/fraud/high-return-customers', fraudRiskController.getHighReturnCustomers);
+router.get('/fraud/seller-returns-recent', fraudRiskController.getSellerHighReturnsRecent);
+router.get('/fraud/seller-returns-alltime', fraudRiskController.getSellerHighReturnsAllTime);
+
+// -- Revenue Drop Analysis --
+router.get('/revenue-drop/monthly', revenueDropAnalysisController.getMonthlyRevenueDropAnalysis);
+router.get('/revenue-drop/yearly', revenueDropAnalysisController.getYearlyRevenueDropAnalysis);
+router.get('/revenue-drop/weekly', revenueDropAnalysisController.getWeeklyRevenueDropAnalysis);
+
+// -- Inventory Integlligence --
+router.get('/inventory/low-stock', inventoryController.getLowStockProducts);
+router.get('/inventory/fast-moving', inventoryController.getFastMovingProducts);
+router.get('/inventory/high-returns', inventoryController.getHighReturnProducts);
+router.get('/inventory/warehouse-load', inventoryController.getWarehouseLoadIntelligence);
+router.get('/inventory/intelligence-score', inventoryController.getInventoryIntelligenceScore);
 
 module.exports = router;
