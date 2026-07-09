@@ -39,7 +39,7 @@ export default function InactiveSellersPage() {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const response = await axios.get(`http://localhost:5001/api/analytics/inactive-sellers`, {
+                const response = await axios.get(`/api/analytics/inactive-sellers`, {
                     params: { startMonth, endMonth }
                 });
                 setData(response.data);

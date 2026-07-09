@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+// 1. Detect if the app is on Vercel or running locally
+const API_BASE_URL = import.meta.env?.VITE_API_URL || process.env.REACT_APP_API_URL || 'http://localhost:5001';
+
+// 2. Set the global base URL for ALL axios requests
+axios.defaults.baseURL = API_BASE_URL;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -60,8 +60,8 @@ export default function ReturnsPage() {
             setLoading(true);
             try {
                 const [analyticsRes, yearsRes] = await Promise.all([
-                    axios.get(`http://localhost:5001/api/analytics/returns?type=${activeTab}&year=${year}`),
-                    axios.get('http://localhost:5001/api/daily-sales/years')
+                    axios.get(`/api/analytics/returns?type=${activeTab}&year=${year}`),
+                    axios.get('/api/daily-sales/years')
                 ]);
                 setData(analyticsRes.data);
                 setYears(yearsRes.data.map(y => y.sales_year));
