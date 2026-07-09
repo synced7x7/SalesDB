@@ -5,7 +5,7 @@
     <br />
     Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation
     <br /><br />
-    <a href="#quick-start">Quick Start</a> · <a href="#features">Features</a> · <a href="#database-design">Database Design</a> · <a href="#api-reference">API Reference</a>
+     <a href="#snippets">Snippets</a> · <a href="#quick-start">Quick Start</a>  · <a href="#features">Features</a> · <a href="#database-design">Database Design</a> · <a href="#api-reference">API Reference</a>
   </p>
 </p>
 
