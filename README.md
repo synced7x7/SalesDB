@@ -1,7 +1,7 @@
-<p align="center">
-  <strong>E-Commerce Sales Analytics Platform</strong><br>
-  Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation
-</p>
+<div align="center">
+  <h1>SalesDB</h1>
+  <p>Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation</p>
+</div>
 
 <p align="center">
   <a href="https://sales-db-self.vercel.app/">
