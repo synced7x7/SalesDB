@@ -1,15 +1,25 @@
+<div align="center">
+  <h1>SalesDB</h1>
+  <p>Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation</p>
+</div>
+
 <p align="center">
-  <h1 align="center">SalesDB</h1>
-  <p align="center">
-    <strong>E-Commerce Sales Analytics Platform</strong>
-    <br />
-    Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation
-    <br /><br />
-    <a href="#quick-start">Quick Start</a> · <a href="#features">Features</a> · <a href="#database-design">Database Design</a> · <a href="#api-reference">API Reference</a>
-  </p>
+  <a href="https://sales-db-self.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#snippets">Snippets</a> ·
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="#features">Features</a> ·
+  <a href="#database-design">Database Design</a> ·
+  <a href="#api-reference">API Reference</a>
 </p>
 
 ---
+
+
 
 ## At a Glance
 
@@ -20,6 +30,103 @@
 | **Frontend** | React 18 SPA — 60+ Recharts chart components |
 | **Data Span** | 2016–2025 synthetic dataset (~30K+ rows across tables) |
 | **SQL Depth** | 12+ PL/pgSQL functions, 8 views, 2 triggers, cursors, CTEs |
+
+---
+
+---
+
+## Snippets
+<table>
+<tr>
+<td>
+<img src="https://github.com/user-attachments/assets/567d92b9-07cf-42db-ae1a-83aeb7daf362" width="400">
+</td>
+<td>
+<img src="https://github.com/user-attachments/assets/f74e163e-9c2d-4359-b9db-14deda1e469b" width="400">
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="https://github.com/user-attachments/assets/24311444-7b31-4137-9716-5e8896b0cd0e" width="400">
+</td>
+<td>
+<img src="https://github.com/user-attachments/assets/31ac3673-edb6-4d57-8dd5-933a9a4caa5b" width="400">
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="https://github.com/user-attachments/assets/83e73738-d9ec-41de-b591-477b37b8ddf2" width="400">
+</td>
+<td>
+<img src="https://github.com/user-attachments/assets/192bb225-b0fe-41c3-a043-d5b40165214c" width="400">
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="https://github.com/user-attachments/assets/15a673fa-602a-49ce-ad4a-0484ac20a0f2" width="400">
+</td>
+<td></td>
+</tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/000e8891-ca4b-490e-a0d7-740e159d3147" width="400">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8cfe4bed-7301-4606-ad0e-9d21b07f19a7" width="400">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/eb4321e0-5370-4ee6-9922-a6a713727973" width="400">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/4e24920c-ac74-47ab-af34-be1b10a05340" width="400">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a3548d4f-430a-497b-9894-59fa033cea7a" width="400">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ddee13ae-2e2b-4d0d-9b59-f9a5dd27f2d0" width="400">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/5969f5b3-33e1-4a9e-99a0-1a28aa801d4d" width="400">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/d62bef82-8f82-430c-99e7-610f329c190c" width="400">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/b1b41249-2481-4607-a2ab-27bfb75aa777" width="400">
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/2fc09514-556e-4c4f-92b8-cc8c533e58ba" width="400">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/aa5d7d8c-2cc4-467a-b9e5-f0932958bfc8" width="400">
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+
 
 ---
 

@@ -4,6 +4,7 @@ import { Database, Upload, Plus, FileText, CheckCircle, AlertCircle } from 'luci
 import { useDropzone } from 'react-dropzone';
 import Papa from 'papaparse';
 
+
 // Data Management Page Component
 
 export default function DataManagementPage() {
@@ -21,7 +22,7 @@ export default function DataManagementPage() {
     useEffect(() => {
         const fetchTables = async () => {
             try {
-                const response = await axios.get('http://localhost:5001/api/data-management/tables');
+                const response = await axios.get('/api/data-management/tables');
                 setTables(response.data.tables);
             } catch (error) {
                 console.error('Error fetching tables:', error);
@@ -35,7 +36,7 @@ export default function DataManagementPage() {
         if (selectedTable) {
             const fetchSchema = async () => {
                 try {
-                    const response = await axios.get(`http://localhost:5001/api/data-management/schema/${selectedTable}`);
+                    const response = await axios.get(`/api/data-management/schema/${selectedTable}`);
                     setTableSchema(response.data.columns || []);
                     setFormData({});
                 } catch (error) {
@@ -59,7 +60,7 @@ export default function DataManagementPage() {
 
         try {
             const response = await axios.post(
-                `http://localhost:5001/api/data-management/insert/${selectedTable}`,
+                `/api/data-management/insert/${selectedTable}`,
                 formData
             );
             setMessage({ type: 'success', text: response.data.message });
@@ -134,7 +135,7 @@ export default function DataManagementPage() {
 
         try {
             const response = await axios.post(
-                `http://localhost:5001/api/data-management/bulk-insert/${selectedTable}`,
+                `/api/data-management/bulk-insert/${selectedTable}`,
                 { records: csvData }
             );
             setMessage({
