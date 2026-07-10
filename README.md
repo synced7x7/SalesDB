@@ -1,15 +1,25 @@
 <p align="center">
-  <h1 align="center">SalesDB</h1>
-  <p align="center">
-    <strong>E-Commerce Sales Analytics Platform</strong>
-    <br />
-    Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation
-    <br /><br />
-     <a href="#snippets">Snippets</a> · <a href="#quick-start">Quick Start</a>  · <a href="#features">Features</a> · <a href="#database-design">Database Design</a> · <a href="#api-reference">API Reference</a>
-  </p>
+  <strong>E-Commerce Sales Analytics Platform</strong><br>
+  Full-stack DBMS with interactive dashboards, advanced SQL analytics, and database automation
+</p>
+
+<p align="center">
+  <a href="https://sales-db-self.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#snippets">Snippets</a> ·
+  <a href="#quick-start">Quick Start</a> ·
+  <a href="#features">Features</a> ·
+  <a href="#database-design">Database Design</a> ·
+  <a href="#api-reference">API Reference</a>
 </p>
 
 ---
+
+
 
 ## At a Glance
 
