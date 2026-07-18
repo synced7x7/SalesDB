@@ -29,7 +29,7 @@
 | **Backend** | Node.js + Express — 40+ RESTful endpoints |
 | **Frontend** | React 18 SPA — 107+ Recharts chart components |
 | **Data Span** | 2016–2025 synthetic dataset (~30K+ rows across tables) |
-| **SQL Depth** | 12+ PL/pgSQL functions, 8 views, 2 triggers, cursors, CTEs |
+| **SQL Depth** | 43+ PL/pgSQL functions, 8 views, 2 triggers, cursors, CTEs |
 
 ---
 
